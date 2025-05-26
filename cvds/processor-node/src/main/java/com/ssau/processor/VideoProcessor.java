@@ -31,6 +31,7 @@ public class VideoProcessor {
 
         Properties prop = ConfigLoader.loadDefault();
 
+        System.setProperty("hadoop.io.nativeio.enabled", "false");
         SparkSession spark = SparkSession.builder()
             .appName("VideoProcessor")
             .master(prop.getProperty("spark.master.url"))

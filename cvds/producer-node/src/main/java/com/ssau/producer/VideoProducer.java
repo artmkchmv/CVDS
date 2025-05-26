@@ -1,18 +1,20 @@
-package com.ssau.producer.service;
-
-import com.ssau.producer.utils.ConfigLoader;
-import lombok.extern.slf4j.Slf4j;
-
-import org.apache.kafka.clients.admin.AdminClient;
-import org.apache.kafka.clients.admin.NewTopic;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.Producer;
+package com.ssau.producer;
 
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import org.apache.kafka.clients.admin.AdminClient;
+import org.apache.kafka.clients.admin.NewTopic;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.Producer;
+
+import lombok.extern.slf4j.Slf4j;
+
+import com.ssau.producer.service.VideoEventCreator;
+import com.ssau.producer.utils.ConfigLoader;
 
 @Slf4j
 public class VideoProducer {
