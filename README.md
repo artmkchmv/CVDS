@@ -52,7 +52,7 @@ Before running the project, make sure to configure the following system environm
 - JAVA_HOME → path to your JDK (e.g., C:\Program Files\Java\jdk-17)
 - MAVEN_HOME → path to Maven (e.g., C:\Program Files\Apache\Maven)
 - HADOOP_HOME → path to extracted Hadoop Winutils, e.g., C:\hadoop
-- 
+
 Add %JAVA_HOME%\bin, %MAVEN_HOME%\bin, and %HADOOP_HOME%\bin to your system PATH.
 
 If your project is located on the system drive (e.g., C:\), you must run Visual Studio Code as Administrator, or Spark may fail to access temp directories.
